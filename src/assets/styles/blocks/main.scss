@@ -1,0 +1,114 @@
+.general {
+  background-image: url("../../images/bg-image.jpg");
+  background-size: cover;
+  background-position: calc(100% - 15%) center;
+  height: 100vh;
+}
+
+.random {
+  display: flex;
+  align-items: center;
+  margin-left: 1px;
+
+  &__btn {
+    font-family: "Bebas Neue";
+    background-color: $secondary;
+    padding: 12px 0;
+    border: none;
+    border: 1px solid $border-text;
+    border-bottom: none;
+    color: $border-text;
+    width: 19vw;
+    height: 53px;
+    box-sizing: border-box;
+  }
+
+  &__desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Bebas Neue";
+    background-color: $main;
+    padding: 10px 0;
+    border: 1px solid $border-text;
+    width: 17vw;
+    box-sizing: border-box;
+    border-left: none;
+    height: 55px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+    &-txt {
+      font-weight: normal;
+      padding: 17.5px 50px;
+      background-color: $code-bg;
+      border: 1px solid $border-text;
+    }
+
+    &-copy {
+      background-color: $code-bg;
+      border: 1px solid $border-text;
+      border-left: none;
+      width: 45px;
+      height: 55px;
+    }
+  }
+}
+
+.info {
+  margin-left: 1px;
+  box-sizing: border-box;
+
+  &__reset {
+    font-family: "Bebas Neue";
+    background-color: $secondary;
+    padding: 12px 40px;
+    border: 1px solid $border-text;
+    border-bottom: none;
+    color: $border-text;
+    width: 19vw;
+    height: 53px;
+    box-sizing: border-box;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 18.9vw;
+    border: 1px solid $border-text;
+
+    &-item {
+      border-bottom: 1px solid $border-text;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  position: absolute;
+  bottom: 25px;
+  right: 7vw;
+
+  &__btn {
+    background: transparent;
+    border: none;
+    width: 60px;
+    height: 60px;
+
+    & > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
